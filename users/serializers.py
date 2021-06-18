@@ -5,8 +5,8 @@ from .models import User
 
 
 class LoginSerializer(serializers.Serializer):
-    email = serializers.EmailField(max_length=80)
-    password = serializers.CharField(max_length=100)
+    email = serializers.EmailField()
+    password = serializers.CharField()
 
     @property
     def object(self):

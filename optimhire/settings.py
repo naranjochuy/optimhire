@@ -111,7 +111,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Mexico_City'
 
 USE_I18N = True
 
@@ -185,3 +185,13 @@ BANXICO_TOKEN = 'faccb75aafcc638f3bef91214bdaf13c5d0b487c062c9385234dd239a70a120
 FIXER_URL = 'http://data.fixer.io/api/'
 FIXER_TOKEN = '4b0dba3ba295eaa7939894d3ec5f13c3'
 TIMEOUT = 10
+
+# Data of the super user of the system, will be created automatically in the migration
+SA_EMAIL = 'naranjo.chuy@gmail.com'
+SA_FIRST_NAME = 'Chuy'
+SA_LAST_NAME = 'Naranjo'
+SA_PASSWORD = '123456'
+
+# Test user data
+TEST_USER = 'jesus.naranjo@test.com'
+TEST_USER_PASSWORD = '123456'

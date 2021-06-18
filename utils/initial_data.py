@@ -1,12 +1,13 @@
+from django.conf import settings
 from users.models import User
 
 
 def add_users(apps, schema_editor, **context):
     data = {
-        'email': 'naranjo.chuy@gmail.com',
-        'first_name': 'Chuy',
-        'last_name': 'Naranjo',
-        'password': '123456'
+        'email': settings.SA_EMAIL,
+        'first_name': settings.SA_FIRST_NAME,
+        'last_name': settings.SA_LAST_NAME,
+        'password': settings.SA_PASSWORD
     }
     errors = False
     cont = 0
